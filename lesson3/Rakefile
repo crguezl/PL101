@@ -1,0 +1,8 @@
+NODE_PATH=":.:/usr/local/lib/node_module"
+task :test do
+	sh "/Users/casiano/node_modules/.bin/mocha -R spec"
+end
+
+task :node_modules do
+	sh "npm install mocha should pegjs"
+end
